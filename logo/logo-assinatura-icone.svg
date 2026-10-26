@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="15" fill="#17130e"/>
-  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" fill="#f6f1e7">
-    <text x="32" y="29" font-size="16" text-anchor="middle" textLength="52" lengthAdjust="spacingAndGlyphs">Alexandra</text>
-    <text x="29.5" y="48" font-size="16" text-anchor="middle" textLength="49" lengthAdjust="spacingAndGlyphs"><tspan fill="#ffd21f">D'</tspan> Almeida</text>
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="700" fill="#4a2c17">
+    <text x="32" y="29" font-size="16" text-anchor="middle" textLength="58" lengthAdjust="spacingAndGlyphs">Alexandra</text>
+    <text x="29" y="48" font-size="16" text-anchor="middle" textLength="53" lengthAdjust="spacingAndGlyphs"><tspan fill="#c48a1d">D'</tspan> Almeida</text>
   </g>
-  <circle cx="58" cy="46.2" r="2.6" fill="#ffd21f"/>
+  <circle cx="60" cy="46.2" r="2.6" fill="#f2b705"/>
 </svg>
