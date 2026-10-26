@@ -235,11 +235,12 @@
   }
   .social a svg { width: 18px; height: 18px; }
   .social a:hover { background: var(--ink); color: var(--cream); transform: translateY(-2px); }
-  footer .slogan {
-    background: var(--ink); color: #ffd84a; padding: 8px 18px; border-radius: 999px; font-size: 1.05rem;
-    box-shadow: 0 0 0 4px rgba(255, 216, 74, .18);
+  footer .slogan { font-size: 1.25rem; }
+  footer .slogan em {
+    color: #f2b705; font-weight: 600; letter-spacing: .01em;
+    -webkit-text-stroke: .6px rgba(23, 19, 14, .55); paint-order: stroke fill;
+    text-shadow: 0 2px 0 rgba(23, 19, 14, .18);
   }
-  footer .slogan em { color: #ffd84a; font-weight: 500; }
   .demo { font-size: .85rem; color: var(--muted); margin: -8px 0 0; font-style: italic; }
 
   /* galeria (lightbox) */
