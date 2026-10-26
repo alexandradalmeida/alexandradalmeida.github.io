@@ -301,6 +301,11 @@
     .track, .ring, .codecard, .dot { animation: none; }
   }
 
+  @media (max-width: 400px) {
+    .brand { font-size: .92rem; }
+    .pill { padding: 8px 11px; font-size: .74rem; }
+  }
+
   /* ---------- telemóvel ---------- */
   @media (max-width: 860px) {
     nav { display: none; }
@@ -312,8 +317,23 @@
     .codecard { left: -14px; }
     .collage { max-width: 420px; margin: 0 auto; width: 100%; }
     section { padding: 70px 0; }
+    .bar { padding: 6px 6px 6px 18px; }
+    .brand { font-size: 1.05rem; white-space: nowrap; }
+    .pill { padding: 9px 14px; font-size: .82rem; white-space: nowrap; }
+    .contact .big { font-size: clamp(1rem, 5.1vw, 2rem); }
     .proj { grid-template-columns: 1fr; }
     .dark { margin: 0 8px; border-radius: 28px; }
+  }
+  /* galeria no telemóvel: imagem ampliada com deslize lateral e setas por baixo */
+  .lb .viewer { display: contents; }
+  @media (max-width: 700px) {
+    .lb.open { justify-content: flex-start; padding-top: 70px; }
+    .lb figure { width: 100%; max-height: none; }
+    .lb .viewer { display: block; width: 100%; overflow: auto; -webkit-overflow-scrolling: touch; border-radius: 12px; }
+    .lb img#lb-img { max-width: none; max-height: none; width: auto; height: min(56vh, 520px); }
+    .lb .prev, .lb .next { top: auto; bottom: 96px; width: 44px; height: 44px; }
+    .lb .prev { left: 14px; } .lb .next { right: 14px; }
+    .lb .thumbs { margin-bottom: 8px; }
   }
 </style>
 </head>
@@ -352,7 +372,7 @@
 
         <svg class="ring" viewBox="0 0 124 124" aria-hidden="true">
           <defs><path id="c" d="M62,62 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
-          <text><textPath href="#c">Disponível para projetos • Disponível • </textPath></text>
+          <text><textPath href="#c" textLength="276" lengthAdjust="spacing">Disponível para projetos • </textPath></text>
         </svg>
         <div class="ring-core" aria-hidden="true">✦</div>
 
@@ -557,7 +577,7 @@
   <button class="prev" aria-label="Anterior">‹</button>
   <button class="next" aria-label="Seguinte">›</button>
   <figure>
-    <img id="lb-img" alt="">
+    <div class="viewer"><img id="lb-img" alt=""></div>
     <figcaption><b id="lb-tit"></b><span id="lb-desc"></span></figcaption>
   </figure>
   <div class="thumbs" id="lb-thumbs"></div>
