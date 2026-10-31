@@ -208,6 +208,7 @@
   .galeria:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
   .plink { font-weight: 700; font-size: .92rem; color: var(--gold); width: fit-content; border-bottom: 1.5px solid currentColor; }
   .plink:hover { color: var(--ink); }
+  .plinks { display: flex; flex-wrap: wrap; gap: 8px 22px; }
   .pcard.vazio { background: transparent; border: 2px dashed rgba(23,19,14,.28); }
   .pcard.vazio:hover { transform: none; box-shadow: none; }
   .media.kalak { background: repeating-linear-gradient(135deg, rgba(23,19,14,.05) 0 12px, transparent 12px 24px); }
@@ -481,7 +482,10 @@
             <h3>Nya Cakes Connect</h3>
             <p>Plataforma que liga clientes a confeiteiros: catálogo de produtos, carrinho, pedidos, chat, avaliações e pagamento por Multicaixa, com painel para o confeiteiro e área de administração.</p>
             <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Supabase</span><span>PostgreSQL</span></div>
-            <a class="plink" href="https://nyacakes.netlify.app" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
+            <div class="plinks">
+              <a class="plink" href="https://nyacakes.netlify.app" target="_blank" rel="noopener">Ver o site ao vivo ↗</a>
+              <a class="plink" href="https://github.com/alexandradalmeida/NyaCakes" target="_blank" rel="noopener">Ver repositório ↗</a>
+            </div>
           </div>
         </article>
 
@@ -500,6 +504,7 @@
             <h3>Exercita · Backend</h3>
             <p>API de uma plataforma de saúde e bem-estar: marketplace de personal trainers, marcação de sessões, pagamentos, avaliações, ginásios, nutrição, loja e administração. Autenticação segura, documentação Swagger e testes automáticos.</p>
             <div class="tags"><span>Django</span><span>REST Framework</span><span>PostgreSQL</span><span>pgvector</span><span>JWT</span><span>Docker</span></div>
+            <a class="plink" href="https://github.com/alexandradalmeida/Exercita-backend" target="_blank" rel="noopener">Ver repositório ↗</a>
           </div>
         </article>
 
